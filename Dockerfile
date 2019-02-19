@@ -16,5 +16,5 @@ RUN apt-get install -qy g++
 RUN cd /home
 RUN git clone https://github.com/mozilla-services/syncserver
 RUN cd syncserver
-RUN make build
+
 
