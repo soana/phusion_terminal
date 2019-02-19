@@ -1,4 +1,4 @@
-FROM phusion/baseimage:latest
+FROM phusion/baseimage:0.9.16
 ENV DEBIAN_FRONTEND noninteractive
 
 # Configure user nobody to match unRAID's settings
@@ -16,5 +16,5 @@ RUN apt-get install -qy g++
 RUN cd /home
 RUN git clone https://github.com/mozilla-services/syncserver
 RUN cd syncserver
-
+RUN make build
 
