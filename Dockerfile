@@ -13,7 +13,7 @@ RUN apt-get install -qy python-dev
 RUN apt-get install -qy git-core 
 RUN apt-get install -qy python-virtualenv 
 RUN apt-get install -qy g++
-RUN cd /home
+RUN cd /share
 RUN git clone https://github.com/mozilla-services/syncserver
 RUN cd syncserver
 RUN make build
