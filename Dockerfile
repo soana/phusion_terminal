@@ -13,3 +13,4 @@ RUN apt-get install -qy python-dev
 RUN apt-get install -qy git-core 
 RUN apt-get install -qy python-virtualenv 
 RUN apt-get install -qy g++
+RUN apt-get install -qy traceroute
